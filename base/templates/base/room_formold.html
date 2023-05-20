@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+  {% block content %}
+
+  <div>
+      <form method="POST" action="">
+          {% csrf_token %}
+          <!-- it wil wrap paragraph tag around input field -->
+           {{form.as_p}} 
+          <input type="submit" value="Submit">
+      </form>
+  </div>
+  {% endblock %}
